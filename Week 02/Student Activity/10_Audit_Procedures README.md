@@ -1,43 +1,53 @@
-## Activity File: Documenting Company Policies
-* In the previous class, you performed a risk analysis to help GeldCorp gain visibility into its most prominent threats. Since then, they've used your results to set numerous internal security goals.
+## Activity File: Audit Procedures
 
-* In this activity, you will develop a policy for one of these goals. You will choose from a list of three options
+* In this activity, you'll audit how GeldCorp collects and stores user data to ensure their processes are GDPR compliant. In addition, you'll identify any data that must be protected according to PCI standards.
+
+* If you identify any incidents of non-compliance, you'll document a way for the organization to make itself compliant.
 
 ### Instructions
 
-1. Use one of the following three goals to develop a company policy. 
+1. Review GeldCorp's data collection and access practices:
 
-    - Eliminate tailgating at all main offices.
+    **Trading Application**
 
-      - **Note**: Tailgating is when an employee holds the door to a building open for others, allowing them to enter without scanning their ID.
+    - Users are prompted for the following data when signing up for the application:
+      - Bank account number
+      - Routing number
+      - Credit/debit card number and security code
 
-    - Guarantee 99% uptime for all trading applications.
+    - The application stores the following data about users:
+      - Which stocks users own.
+      - Which stocks users have been researching.
+      - Which stocks users have purchased and sold.
+      - Trading account balances.
 
-    - Reduce how often developers access customer PII that they don't need for their projects.
+    - Users are told exactly what data GeldCorp will store, but are not notified that financial advisors and developers can access their data. 
 
-2. Use the following template to fill out your policies.
+    - GeldCorp does not notify users when using their data to develop new features.
 
-```
-  DATE:
-  AUTHOR:
+    **Financial Advisory Portal**
 
-  <Policy Name>
+    - Financial advisors are able to see the following information about users:
+      - Name, email, address, phone number, and birthday
+      - Bank account balances
+      - Trading account balances
+      - Portfolio
+      - Trading history
+    
+    - Advisors cannot modify any of this data, but all of their office computers have access to it.
 
-  PURPOSE
-  What security benefit does this policy bring?
+    - All data is stored on fully encrypted servers.
+  
+    **Developers Access**
+    - Developers can access all customer data, including trading and bank account details, as long as it is relevant to their projects.
 
-  DESCRIPTION OF <Policy Name>
-  What are the terms of the policy?
+2. Answer the following questions for each of the headings above:
 
-  ENFORCEMENT
-  How will this policy be enforced?
+    - Is this category GDPR compliant?
 
-  MONITORING  
-  How will the effectiveness of this policy be measured?
-```
-
-Work in pairs on this assignment, and don't hesitate to ask your instructional staff and/or classmates for help if you get stuck.
-
+    - Is this category of data protected by PCI? If so, which pieces of data must be protected?
+    
+    - What can GeldCorp do to improve its compliance?
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
