@@ -1,0 +1,120 @@
+From:
+@xtremepentest
+https://twitter.com/xtremepentest/status/1530557928381489153?s=20&t=oQB8xV_uOq4n0L5qjv9Ryg
+
+
+/- 𝗧𝗵𝗲 𝗿𝗼𝗼𝘁 𝗱𝗶𝗿𝗲𝗰𝘁𝗼𝗿𝘆
+The top of the directory structure is the root directory, which is represented by a forward slash (/). 
+The root directory contains the directories and files that make up the Linux system.
+
+
+/𝗯𝗶𝗻 - 𝗕𝗶𝗻𝗮𝗿𝗶𝗲𝘀
+The '/bin' directory contains the majority, if not all, of the machine's programs or applications, such as cd, cat, ls, and so on. The majority of the programs are in binary format and are accessible to all Linux users.
+
+
+/𝗯𝗼𝗼𝘁 - 𝗕𝗼𝗼𝘁 𝗳𝗶𝗹𝗲𝘀
+This is an important folder in Linux because it contains all of the files required by the OS to boot, i.e. the boot loaders, such as the file grub.conf found in the grub directory, as well as the set of vmlinuz, initrd, s and kernel related files.
+
+
+/𝗱𝗲𝘃 - 𝗗𝗲𝘃𝗶𝗰𝗲 𝗳𝗶𝗹𝗲𝘀
+This is where all your devices live.  
+You'll find your hardware, such as your keyboard, mouse, and printer. 
+A disk, for example, would be found as /dev/sda, and a partition on that disk would be found as /dev/sda1.
+
+
+/𝗲𝘁𝗰 – 𝗖𝗼𝗻𝗳𝗶𝗴𝘂𝗿𝗮𝘁𝗶𝗼𝗻 𝗳𝗶𝗹𝗲𝘀
+The /etc directory houses the system's core configuration files, which are primarily used by the administrator and services, such as the password file, hostnames and networking files.
+
+
+/𝗵𝗼𝗺𝗲 – 𝗨𝘀𝗲𝗿 𝗽𝗲𝗿𝘀𝗼𝗻𝗮𝗹 𝗱𝗮𝘁𝗮
+In Linux, each user is assigned a directory that only they and the system administrator can access. 
+This is the location where you keep your personal files, install programs, and save documents.
+
+In Linux, the HOME directory also contains your personal configuration files, also known as dot files (a dot precedes the name of the file). 
+
+These are typically 'hidden,' and in order to see them, you must enable the appropriate option in your file manager or run the command ls with the -a switch in the terminal.
+
+Assume you have two users on your Linux system, Jerry and Jimmy. 
+They'll have their own home directories at /home/jerry and /home/jimmy respectively.
+
+
+
+/𝗹𝗶𝗯 – 𝗦𝗵𝗮𝗿𝗲𝗱 𝗹𝗶𝗯𝗿𝗮𝗿𝗶𝗲𝘀
+The kernel modules and shared library files required by the system's boot operation can be found in the /lib directory. 
+The extension *.so makes libraries easily identifiable.
+
+In Windows, the equivalent would be a dynamically linked library or DLL.
+
+
+
+/𝗺𝗲𝗱𝗶𝗮 - 𝗠𝗼𝘂𝗻𝘁 𝗽𝗼𝗶𝗻𝘁 𝗳𝗼𝗿 𝗿𝗲𝗺𝗼𝘃𝗮𝗯𝗹𝗲 𝗺𝗲𝗱𝗶𝗮
+media directory contains sub-directories in which removable media such as cdroms and USB keys can be mounted on by the system. 
+You can access the content of the removable media from this directory.
+
+
+
+/𝗺𝗻𝘁 - 𝗠𝗼𝘂𝗻𝘁 𝗱𝗶𝗿𝗲𝗰𝘁𝗼𝗿𝘆
+The /mnt directory, like the previously mentioned media folder, is where you (or the system administrator) manually mount devices or filesystems. 
+Mounting is the process of making a filesystem available to the operating system.
+
+
+/𝗼𝗽𝘁 – 𝗢𝗽𝘁𝗶𝗼𝗻𝗮𝗹 𝘀𝗼𝗳𝘁𝘄𝗮𝗿𝗲
+In Linux, the /opt directory is an optional folder that usually contains manually installed software and vendor add-on packages (.i.e not part of the original installation).
+
+
+
+/𝗽𝗿𝗼𝗰 – 𝗣𝗿𝗼𝗰𝗲𝘀𝘀 𝗮𝗻𝗱 𝗸𝗲𝗿𝗻𝗲𝗹 𝗳𝗶𝗹𝗲𝘀
+The directory '/proc' contains information about currently running processes and kernel parameters. 
+A number of tools use the content of the proc directory to obtain runtime system information.
+
+In Linux, for example, if you want to check processor information, you can simply navigate to the file /proc/cpuinfo. 
+If you want to see how much memory your Linux system is using, look at the contents of the /proc/meminfo file.
+
+
+
+/𝗿𝗼𝗼𝘁 – 𝗧𝗵𝗲 𝗵𝗼𝗺𝗲 𝗱𝗶𝗿𝗲𝗰𝘁𝗼𝗿𝘆 𝗼𝗳 𝘁𝗵𝗲 𝘂𝘀𝗲𝗿
+There is also a /root directory, which serves as the root user's home directory. 
+So, instead of /home/root, root's home is at /root. 
+It should not be confused with the root directory (/).
+
+
+/𝘀𝗯𝗶𝗻 – 𝗦𝘆𝘀𝘁𝗲𝗺 𝗯𝗶𝗻𝗮𝗿𝗶𝗲𝘀
+This is similar to the /bin directory. 
+The only distinction is that it contains binaries that can only be executed by root or a sudo user.
+
+
+/𝘁𝗺𝗽 – 𝗧𝗲𝗺𝗽𝗼𝗿𝗮𝗿𝘆 𝗳𝗶𝗹𝗲𝘀
+This directory, as the name implies, stores temporary files. 
+This directory is used by many applications to store temporary files.
+You can also use a directory to store temporary files.
+
+However, keep in mind that the contents of the /tmp directories are deleted when your system restarts so don't store anything important here.
+
+
+/𝘂𝘀𝗿 – 𝗨𝘀𝗲𝗿 𝗯𝗶𝗻𝗮𝗿𝗶𝗲𝘀 𝗮𝗻𝗱 𝗽𝗿𝗼𝗴𝗿𝗮𝗺 𝗱𝗮𝘁𝗮
+Here you can find executable files, libraries, source of most of the system programs.
+Here are some examples of directories contained in the /usr directory
+- ‘/usr/bin’ contains basic user commands
+- ‘/usr/sbin’ contains administrator-specific commands.
+- ‘/usr/lib’ contains the system libraries
+- ‘/usr/share’contains documentation or files that are shared by all libraries, such as '/usr/share/man', which contains the text of the manpages.
+
+
+
+/𝘃𝗮𝗿 - 𝗩𝗮𝗿𝗶𝗮𝗯𝗹𝗲 𝗱𝗮𝘁𝗮 𝗳𝗶𝗹𝗲𝘀
+'/var' contains variable data that is expected to grow in size (such as system logging files, printer spool directories, mail, and so on).
+
+For example:
+– /var/crash stores information about crashed processes.
+– /var/log contains log files for the system as well as other applications.
+– /var/lib contains dynamic data files/libraries.
+– /var/spool spool data of applications
+– /var/mail Contains user mailbox files
+
+
+
+/𝘀𝗿𝘃 – 𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗱𝗮𝘁𝗮
+This is the service directory, which stores service data. 
+If you run a server, such as a web server or FTP server, the files that will be accessed by external users would be stored in /srv/.
+
+
